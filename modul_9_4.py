@@ -10,14 +10,14 @@ print(result)
 
 def get_advanced_writer(file_name):
     def write_everything(*data_set):
-        with open('file_name.txt', 'a', encoding='UTF-8') as file:
+        with open('example.txt', 'a', encoding='UTF-8') as file:
             for data in data_set:
                 file.write(str(data) + '\n')
 
     return write_everything
 
 
-write = get_advanced_writer('file_name.txt')
+write = get_advanced_writer('example.txt')
 write('Это строчка', ['А', 'это', 'уже', 'число', 5, 'в', 'списке'])
 
 
